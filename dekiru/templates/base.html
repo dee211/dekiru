@@ -1,10 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="ru">
 
-</body>
-</html>
+<head>
+    {% block head %}
+    <meta http-equiv="Cache-control" content="public">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Индивидуальное обучение японскому языку. Ваш личный репетитор японского языка на дому и онлайн! Пробное занятие бесплатно! Звоните: 8(925) 356-41-07. Пишите: info@dekiru.ru">
+    <meta name="author" content="">
+    <meta name="yandex-verification" content="08203e2ac0066075" />
+    <link  rel="image_src" href="img/logo_vk.jpg">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Репетитор японского языка</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/group.css" rel="stylesheet">
+    <link href="css/hipster_blocks.css" rel="stylesheet">
+    <link href="css/material_disign.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/TimeCircles.css" rel="stylesheet">
+    <!--<link href="css/table.css" rel="stylesheet">-->
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/openapi.js"></script>
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups", {mode: 3, width: "260", height: "400", color1: 'FFFFFF', color2: '000000', color3: '5E81A8'}, 127797460);
+    </script>
+    <!--google Metrika-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-67371039-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter34679085 = new Ya.Metrika({
+                        id:34679085,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "js/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/34679085" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script>
+        new WOW().init();
+    </script>
+    {% endblock %}
+</head>
+
+{% block nav_bar %}
+<!-- Navigation -->
+<nav class="navbar navbar-fixed-top navbar-default navbar-shrink device-fixed-height">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll ">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Японский язык - интересно и доступно!</a>
+            <div class="nav-contacts pull-left"><i class="fa fa-mobile"></i>&nbsp; <a href="tel:89257358117">8(925) 356-41-07</a>&nbsp;&nbsp;
+                <i class="fa fa-envelope-o"></i>&nbsp;<a href="mailto:89257358117">info@dekiru.ru</a></div>
+
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">Обо мне</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#how">Занятия</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#review">Отзывы</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#price">Стоимость</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Связь с нами</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+{% endblock %}

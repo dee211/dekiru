@@ -1,10 +1,673 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+    <body id="page-top" class="index">
+    <header id="top" class="header">
+        <div class="fake_nav">
+            <div class="container">
+            </div>
+        </div>
+        <div class="header_wrapped">
+            <div class="container">
+                <div class="col-md-10 col-lg-10 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
+                    <h1 class="title animated fadeInUp" data-animation="fadeInUp" data-animation-delay="350" data-animation-out="fadeOutUp" style="animation-delay: 350ms;"><span class="text-yellow">Записывайся </span><span> на пробное занятие!</span></h1>
+                    <div class="extra-title animated fadeInUp" data-animation="fadeInUp" data-animation-delay="700" data-animation-out="fadeOutUp" data-animation-out-delay="350" style="animation-delay: 700ms;">
+                        <span class="first block-content"><small>Групповые занятия японского языка онлайн!</small></span>
+                        <span class="second block-content"><small><span class="text-yellow">Старт</span> 15 октября в 19:00</small></span>
+                    </div>
+                    <div class="count-down" data-date="2018-10-15 19:00:00"
+                         data-animation="zoomIn"
+                         data-animation-delay="1150"
+                         data-animation-out="fadeOut"
+                         data-animation-out-delay="800"></div>
+                    <!--<span class="second block-content"><small>Ваш личный репетитор японского языка на дому и онлайн</small></span>-->
+                    <!--<span class="teacher-name block-content"><small>Алина Кулигина</small></span>-->
+                    <!--<span class="free">Дарим первое занятие!</span>-->
+                    <div class="newsletter" id="subscribe-form">
+                        <form class="form subscribe" role="form">
+                            <input type="email" class="form-control" placeholder="Введите ваш e-mail..." name="phone"
+                                   required data-validation-required-message="Пожалуйста укажите ваш номер телефона или электронный адрес.">
+                            <p></p>
+                            <button type="submit" onclick="yaCounter34679085.reachGoal('subscribe'); return true;" class="btn btn-default notified-email">Записаться</button>
+                            <div class="form-message" style="display: none;"></div>
+                        </form>
+                        <div class="success"></div>
+                    </div>
+                    <div id='header-button-down' class="button_down">
+                        <a class="imgcircle wow fadeInDown animated animated page-scroll imagecircle_setting" data-wow-duration="1.5s" href="#team"> <img class="img_scroll" src="img/circle.png" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Давайте знакомиться!</h2>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="team-member">
+                    <img src="img/tokyo2.jpg" class="img-responsive pull-left img_border_50" alt="Аниме квартал" title="Токио. Акихабара. Аниме квартал Японии.">
+                    <div class="discripton">
+                        <p>Я, Алина Кулигина – преподаю японский язык по самостоятельно разработанной для каждого моего ученика программе.
+                            Я убеждена – эффективное обучение должно быть интересным и ориентированным на цели и потребности конкретного учащегося, а не всей группы или класса.</p>
+                        <p>Я окончила факультет зарубежного регионоведения в Институте стран Востока и успешно прошла практику в Японии.
+                            Еще студенткой начала заниматься репетиторством с людьми начального и базового уровня языковой подготовки, готовила их к JLPT –
+                            Международному экзамену по определению уровня владения японским языком.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pull-left">
+                        <img src="img/japan11.jpg" class="img-responsive img_border_50" alt="Встреча в Японии" title="Культурный обмен в Токио. Япония">
+                    </div>
+                    <div class="discripton">
+                        <p>
+                            Я продолжаю развиваться каждый день и с радостью помогаю развиваться другим.
+                            Работая преподавателем японского языка в языковой школе, я смогла выявить наиболее рабочие
+                            методы подачи информации и ее быстрого усвоения, отработала их на практике и предлагаю вам, моим будущим ученикам.
+                        </p>
+                        <p>Мои занятия основаны только на прямом контакте: будь это встреча в скайпе, в аудитории или на дому.</p>
+                        <p>Берясь обучать вас японскому языку – я контролирую результат и гарантирую успех в конце
+                            курса: расширение собственного кругозора, сдачу JLPT или тестов при приеме на работу.</p>
+                    </div>
+                    <span class='pull-right text-muted remark'>ようこそ!</span>
+
+                    <!-- VK Widget -->
+                    <div id="vk_groups" class=""></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">КАК БУДЕТ ПРОХОДИТЬ ВАШЕ ОБУЧЕНИЕ</h2>
+                    <br>
+                    <br>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+            <div class="row text-center">
+                <!--<div class="col-md-6">-->
+                <!--</div>-->
+                <!--<div class="col-md-6">-->
+                <div class="col-md-6">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Онлайн-занятия</h4>
+                        <p class="text-muted">Все уроки проводятся с помощью онлайн-занятий, на которых вы сможете слушать преподавателя и задавать свои вопросы. Вам нужно лишь иметь компьютер или телефон с доступом в интернет.</p>
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Домашние задание</h4>
+                        <p class="text-muted">Все домашние задания высылаются вам на почту или в соцсетях. На проверку домашнее задание высылается преподавателю. Работа над ошибками будет проводиться на занятиях и занимать примерно 15-20 минут.</p>
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-video-camera fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Видеоархив</h4>
+                        <p class="text-muted">У вас срочное дело и вы не можете посетить урок? Не беда! В случае пропуска, вам высылается запись занятия с материалами и домашнее задание.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <img class="mac inline-block" src="img/clickmeeting.jpg" alt="фото вебинар">
+                    <img class="iphone" src="img/iphone2.png" alt="фото вебинар">
+                </div>
+                <!--</div>-->
+            </div>
+        </div>
+    </section>
+
+    <section id="review">
+        <div class="container">
+            <div class="row">
+                <div class='col-md-offset-2 col-md-8 text-center'>
+                    <h2>Отзывы учеников</h2>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#quote-carousel" data-slide-to="1"></li>
+                        <li data-target="#quote-carousel" data-slide-to="2"></li>
+                        <li data-target="#quote-carousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="img/client_avatar_review3.jpg" alt="Аватарка отзыва" title="Аватарка отзыва о репетитора" style="width: 100px;height:100px;">
+                                        <div class="fio">Николай Чистяков</div>
+                                        <div class="profile"><a target="_blank" href="https://vk.com/damovoj">https://vk.com/id150616333</a></div>
+
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>У меня есть опыт изучения нескольких языков, и на первых порах основная трудность - это огромный объем лишней и несвоевременной информации. От учителя зависит, как структурировать эту информацию, чтобы облегчить начинающему освоение языковых навыков. Алина прекрасно справляется с этой задачей. В уроках нет ничего лишнего, только то, что необходимо. И даже японский не кажется таким уж сложным)) И, конечно, огромный плюс - это позитив и море обаяния, которые тоже очень важны для успешного обучения. Алина-сан, спасибо!</p>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="img/client_avatar_review4.jpg" alt="Аватарка отзыва" title="Аватарка отзыва о репетитора" style="width: 100px;height:100px;">
+                                        <div class="fio">Вячеслав Тимофеев</div>
+                                        <div class="profile"><a target="_blank" href="https://vk.com/id49126047">https://vk.com/id49126047</a></div>
+
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>Я не знаю, как в мою голову залезла мысль о изучении японского языка, но это как то произошло. Я перерыл весь свой город в поисках репетитора по японскому, но увы в городе, где Аниме называют "Бурятскими мультиками", из кулинарии знают только суши и то иногда путают с сушками, не найти такого( Мне подсказали, что можно изучать по интернету, через скайп - я всегда думал, что невозможно выучить что то в интернете, но мне повезло, что Алина оказалась тем первым и последним репетитором японского, потому что только с ней можно: слушать истории(прям как у костра) о Японии, смеяться с необычных японских роликов и конечно же добросовестно учить сам язык. Спасибо Алине за ее работу:D
+                                        </p>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+
+                        <!-- Quote 1 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="img/client_avatar_review.jpg" alt="Аватарка отзыва" title="Аватарка отзыва о репетитора" style="width: 100px;height:100px;">
+                                        <div class="fio">Олег Косоногов</div>
+                                        <div class="profile"><a target="_blank" href="https://vk.com/id29182294">https://vk.com/id29182294</a></div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>Я бы хотел поблагодарить Алину – она сделала то, что я считал невозможным – я начал говорить по японски. Да немного, да коряво – но для меня это просто что-то невероятное. Для меня это маленькая победа, на большом пути. Если честно – языки мне даются очень трудно, а здесь удивлен своему прогрессу. Возможно, не так занимался и не так учили. Здесь же занимался в одно удовольствие. Ну и заниматься по скайпу, почти не вставая с кровати, оказывается дешевле, относительно дорогих индивидуальных занятий. <br />アリナ先生ありがとうございます ;D</p>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="img/client_avatar_review2.jpg" alt="Аватарка отзыва" title="Аватарка отзыва о репетитора" style="width: 100px;height:100px;">
+                                        <div class="fio">Римма Прокопенко</div>
+                                        <div class="profile"><a target="_blank" href="https://vk.com/id150616333">https://vk.com/id150616333</a></div>
+
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>Я очень рада, что в свое время обратилась к Алине. У меня уже была база, но заниматься самой тяжело, лениво и на ошибки никто не укажет. Алина очень здорово структурировала мои знания, с ней, занимаясь два раза в неделю, я достигла за полгода лучшего результата чем за год самостоятельного ежедневного (почти) изучения языка. Сейчас Алина активно натаскивает меня к JLPT N3, без нее, такой высоты я бы не достигла)</p>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-light-gray">
+        <div class="features-area features-yellow horizontal" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center title-yellow">
+                            <div class="section-heading help-offer">Я берусь за обучение японскому языку любого человека – выучу и вас!</div>
+                            <div class="row">
+                                <br>
+                                <br>
+                                <div class="col-md-12">
+                                    <h4 class="section-heading heading">Если вы хотите</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-7 col-lg-offset-5 col-md-9 col-md-offset-3 col-sm-12 col-sm-offset-0 feature-wrapper need">
+                        <div class="single-item">
+                            <div class="single-item-icon">
+                                <span class="helper"></span>
+                                <img src="img/icons/culture.svg" alt="">
+                            </div>
+                            <div class="single-item-text">
+                                <p>Понимать и разбираться в японской культуре</p>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div class="single-item-icon">
+                                <span class="helper"></span>
+                                <img  src="img/icons/heart3.svg" alt="">
+                            </div>
+                            <div class="single-item-text">
+                                <p>Смотреть аниме и читать мангу на родном языке</p>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div class="single-item-icon">
+                                <span class="helper"></span>
+                                <img src="img/icons/speech2.svg" alt="">
+                            </div>
+                            <div class="single-item-text">
+                                <p>Увеличить языковой ресурс японским языком</p>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div class="single-item-icon">
+                                <span class="helper"></span>
+                                <img src="img/icons/exam_second.svg" alt="">
+                            </div>
+                            <div class="single-item-text">
+                                <p>Сдать международный экзамен JLPT или тест</p>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div class="single-item-icon">
+                                <span class="helper"></span>
+                                <img src="img/icons/job.svg" alt="">
+                            </div>
+                            <div class="single-item-text">
+                                <p>Получить работу в Японии или контракты в ней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="p1">
+        <div class="container need">
+            <div class="row check-mark">
+                <div class="col-lg-12 text-center heading">
+                    <div class="section-heading help-offer">И я предложу для вас индивидуальную и гарантированно рабочую программу:</div>
+                </div>
+                <br>
+                <div class="sub-row main-content-block col-md-12">
+                    <div class="content-block">
+                        <div class="col-md-4 clearfix">
+                            <div class="mark-img">
+                                <img src="img/check.png" alt="">
+                            </div>
+                            <div class="step">
+                                <span>Проведу бесплатное пробное занятие</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4 clearfix">
+                            <div class="mark-img">
+                                <img src="img/check.png" alt="">
+                            </div>
+                            <div class="step">
+                                <span>Выявлю цели и инструменты их достижения</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 clearfix">
+                            <div class="mark-img">
+                                <img src="img/check.png" alt="">
+                            </div>
+                            <div class="step">
+                                <span>Подберу вам интересный учебный материал</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="sub-row col-md-12 main-content-block">
+                    <div class="content-block">
+                        <div class="col-md-4 clearfix">
+                            <div class="mark-img">
+                                <img src="img/check.png" alt="">
+                            </div>
+                            <div class="step">
+                                <span>Ознакомлю с тонкостями японского языка</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 clearfix">
+                            <div class="mark-img">
+                                <img src="img/check.png" alt="">
+                            </div>
+                            <div class="step">
+                                <span>Дам интересные домашние занятия при учебе</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 clearfix">
+                            <div class="mark-img">
+                                <img src="img/check.png" alt="">
+                            </div>
+                            <div class="step">
+                                <span>Порадуюсь вашим успехам по окончании курса</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- price Grid Section -->
+    <section id="price" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading help-offer">Узнайте и удивитесь: насколько доступно обучение японскому языку каждому!</div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="pricing-table group">
+                    <!-- PROFESSIONAL -->
+                    <div class="block personal fl">
+                        <div class="title">Групповые 1</div>
+                        <!-- CONTENT -->
+                        <div class="content">
+                            <p class="price">
+                                <span>2000₽</span><span class="month">/мес.</span>
+                            </p>
+                        </div>
+                        <!-- /CONTENT -->
+                        <!-- FEATURES -->
+                        <ul class="features">
+                            <li><i class="fa fa-calendar" aria-hidden="true"></i> Одно занятие в неделю</li>
+                            <li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 500 рублей одно занятие</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> Время занятия - 90 минут</li>
+                            <li><i class="fa fa-mobile" aria-hidden="true"></i> Занимайся откуда угодно</li>
+                            <li><i class="fa fa-video-camera" aria-hidden="true"></i> Смотри пропущенные занятия</li>
+                        </ul>
+                        <!-- /FEATURES -->
+                        <!-- PT-FOOTER -->
+                        <div class="pt-footer">
+                            <a href data-toggle="modal" data-target="#subscribe2" class="btn subscribe-price">Записаться</a>
+                        </div>
+                        <!-- /PT-FOOTER -->
+                    </div>
+
+                    <div class="block personal fl">
+                        <div class="title">Групповые 2</div>
+                        <!-- CONTENT -->
+                        <div class="content">
+                            <p class="price">
+                                <span>4000₽</span><span class="month">/мес.</span>
+                            </p>
+                        </div>
+                        <!-- /CONTENT -->
+                        <!-- FEATURES -->
+                        <ul class="features">
+                            <li><i class="fa fa-calendar" aria-hidden="true"></i> Два занятия в неделю</li>
+                            <li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 500 рублей одно занятие</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> Время занятия - 90 минут</li>
+                            <li><i class="fa fa-mobile" aria-hidden="true"></i> Занимайся откуда угодно</li>
+                            <li><i class="fa fa-video-camera" aria-hidden="true"></i> Смотри пропущенные занятия</li>
+                        </ul>
+                        <!-- /FEATURES -->
+                        <!-- PT-FOOTER -->
+                        <div class="pt-footer">
+                            <a href data-toggle="modal" data-target="#subscribe2" class="btn subscribe-price">Записаться</a>
+                        </div>
+                        <!-- /PT-FOOTER -->
+                    </div>
+                    <div class="block personal fl">
+                        <div class="title">Групповые 3</div>
+                        <!-- CONTENT -->
+                        <div class="content">
+                            <p class="price">
+                                <span>1000₽</span><span class="month">/мес.</span>
+                            </p>
+                        </div>
+                        <!-- /CONTENT -->
+                        <!-- FEATURES -->
+                        <ul class="features">
+                            <li><i class="fa fa-calendar" aria-hidden="true"></i> Одно занятие раз в две недели</li>
+                            <li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 500 рублей одно занятие</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i> Время занятия - 90 минут</li>
+                            <li><i class="fa fa-mobile" aria-hidden="true"></i> Занимайся откуда угодно</li>
+                            <li><i class="fa fa-video-camera" aria-hidden="true"></i> Смотри пропущенные занятия</li>
+                        </ul>
+                        <!-- /FEATURES -->
+                        <!-- PT-FOOTER -->
+                        <div class="pt-footer">
+                            <a href data-toggle="modal" data-target="#subscribe2" class="btn subscribe-price">Записаться</a>
+                        </div>
+                        <!-- /PT-FOOTER -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img src="img/icons/qiwi.png" alt="">
+                    <img src="img/icons/yandex-money.png" alt="">
+                    <img src="img/icons/sberbank.png" alt="">
+                    <img src="img/icons/alfabank.png" alt="">
+                    <img src="img/icons/visa.png" alt="">
+                    <img src="img/icons/mastercard.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading help-offer">Хотите задать вопросы и договориться о занятиях – звоните и пишите!</div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name='name' placeholder="Ваше имя *" id="name" required data-validation-required-message="Пожалуйста укажите ваше имя.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name='phone' placeholder="Ваш e-mail *" id="phone" required data-validation-required-message="Пожалуйста укажите ваш электронный адрес.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Ваше сообщение" id="message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                    <small>
+                                        <a href="" class="conf pull-right" data-toggle="modal" data-target="#myModal">
+                                            Политика конфиденциальности</a>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div class="success"></div>
+                                <button type="submit" class="btn btn-xl inline-block send-btn">Отправить</button>
+                                <dl class="call pull-left">
+                                    <dt>Звоните по телефону</dt>
+                                    <dd><i class="fa fa-mobile"></i>&nbsp;8(925) 356-41-07</dd>
+                                    <dt>Пишите на e-mail:</dt>
+                                    <dd><i class="fa fa-envelope-o"></i>&nbsp;info@dekiru.ru</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <span class="copyright text-muted">Японский язык 2015 - 2016</span>
+                </div>
+                 <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://vk.com/dekiru_ru"><i class="fa fa-vk"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Политика конфиденциальности</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Политика в отношении обработки персональных данных определяет основные принципы и правила по обработке персональных данных, которыми мы руководствуемся в нашей работе, а также в общении с клиентами, поставщиками и сотрудниками. Политика в отношении обработки персональных данных распространяется на всех наших сотрудников.</p>
+                    <p>При обработке персональных данных мы стремимся соблюдать требования законодательства Российской Федерации, в частности Федеральный закон № 152-ФЗ «О персональных данных», а также нормы и правила, установленные в нашей компании.</p>
+                    <div class="text-center">
+                        <p>Политика в отношении обработки персональных данных</p>
+                        <p><a target="_blank" href="/img/conf.pdf">policy.pdf</a>, 73 КБ</p></div>
+                    <p>По всем вопросам вы можете связаться по email info@dekiru.ru</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"> Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade price-subscribe" id="subscribe1" tabindex="-1" role="dialog" aria-labelledby="subscribe1_label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="subscribe1_label">Запись на занятие</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="sentMessage" id="subscribe1＿form" novalidate>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name='name' placeholder="Ваше имя *" required data-validation-required-message="Пожалуйста укажите ваше имя.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name='phone' placeholder="Ваш e-mail *" required data-validation-required-message="Пожалуйста укажите ваш электронный адрес.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="success"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"> Закрыть</button>
+                            <button type="submit" name="send" class="btn send-btn btn-default pull-left" >Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade price-subscribe" id="subscribe2" tabindex="-1" role="dialog" aria-labelledby="subscribe2_label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="subscribe2_label">Запись на занятие</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="sentMessage" id="subscribe2＿form" novalidate>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name='name' placeholder="Ваше имя *" required data-validation-required-message="Пожалуйста укажите ваше имя.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name='phone' placeholder="Ваш e-mail *" required data-validation-required-message="Пожалуйста укажите ваш электронный адрес.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="success"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"> Закрыть</button>
+                            <button type="submit" name="send" class="btn send-btn btn-default pull-left">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade price-subscribe" id="subscribe3" tabindex="-1" role="dialog" aria-labelledby="subscribe3_label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="subscribe3_label">Запись на занятие</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="sentMessage" id="subscribe3＿form" novalidate>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name='name' placeholder="Ваше имя *" required data-validation-required-message="Пожалуйста укажите ваше имя.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name='phone' placeholder="Ваш e-mail *" required data-validation-required-message="Пожалуйста укажите ваш электронный адрес.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="success"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"> Закрыть</button>
+                            <button type="submit" name="send" class="btn send-btn btn-default pull-left">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/group_contact_me.js"></script>
+    <script src="js/review.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script type="text/javascript" src="js/TimeCircles.js"></script>
+    <script src="js/group.js"></script>
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <!--<script type='text/javascript'>-->
+        <!--(function(){ var widget_id = 'mODvneE26W';var d=document;var w=window;function l(){-->
+            <!--var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>-->
+    <!-- {/literal} END JIVOSITE CODE -->
 </body>
-</html>
+{% endblock %}
