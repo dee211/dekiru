@@ -51,7 +51,6 @@ hr.small {
     max-width: 100px;
 }
 
-/* Header */
 
 .header {
     display: table;
@@ -59,52 +58,12 @@ hr.small {
     /*margin-top: 70px;*/
     width: 100%;
     height: 100%;
-    background: url(../img/main_dark.jpg) no-repeat center center scroll ;
+    background: url(/static/img/main_dark.jpg) no-repeat center center scroll ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
-
-/* About */
-
-/*.about {*/
-    /*padding: 50px 0;*/
-/*}*/
-
-/* Services */
-
-/*.services {*/
-    /*padding: 50px 0;*/
-/*}*/
-
-/*.service-item {*/
-    /*margin-bottom: 30px;*/
-/*}*/
-
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* Portfolio */
-
-/*.portfolio {*/
-    /*padding: 50px 0;*/
-/*}*/
-
-/*.portfolio-item {*/
-    /*margin-bottom: 30px;*/
-/*}*/
 
 .img-portfolio {
     margin: 0 auto;
@@ -136,17 +95,6 @@ hr.small {
     }
 }
 
-/* Footer */
-
-/*footer {*/
-    /*padding: 100px 0;*/
-/*}*/
-
-
-
- /*old*/
-
-
 
 .text-muted {
     color: #777;
@@ -155,7 +103,6 @@ hr.small {
 .text-primary {
     color: #fed136;
 }
-/**/
 
 
 p {
@@ -658,7 +605,7 @@ div.clients .img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(/static/img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -873,14 +820,14 @@ body {
 
 @font-face {
     font-family: 'Kobzar KS';
-    src: local('Kobzar KS'), local('KobzarKS'), url('../fonts/kobzarks.woff2') format('woff2'), url('../fonts/kobzarks.woff') format('woff'), url('../fonts/kobzarks.ttf') format('truetype');
+    src: local('Kobzar KS'), local('KobzarKS'), url('/static/fonts/kobzarks.woff2') format('woff2'), url('/static/fonts/kobzarks.woff') format('woff'), url('/static/fonts/kobzarks.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'simpleiriska';
-    src: local('simpleiriska'), url('../fonts/simpleiriska.ttf') format('truetype');
+    src: local('simpleiriska'), url('/static/fonts/simpleiriska.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -1264,7 +1211,7 @@ body {
 
 
 .girl-background {
-    background: url(../img/japanese_girl.jpg)  no-repeat center center scroll;;
+    background: url(/static/img/japanese_girl.jpg)  no-repeat center center scroll;;
     background-size: cover;
     width: 100%;
 }
@@ -1307,7 +1254,7 @@ body {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/tori.jpg) no-repeat center center scroll;
+    background: url(/static/img/tori.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1359,7 +1306,7 @@ body {
 
 .p1 {
     width: 100%;
-    background: url(../img/s3-bg.jpg) no-repeat center center scroll;
+    background: url(/static/img/s3-bg.jpg) no-repeat center center scroll;
     color: #fff;
 }
 
@@ -1681,22 +1628,22 @@ ul.features {
 
 
 .clients .vk {
-    background-image: url("../img/vk.jpg");
+    background-image: url("/static/img/vk.jpg");
     background-repeat: no-repeat;
     transition: background-image 0.3s;
 }
 .clients .vk:hover {
-    background-image: url("../img/vk_colored.jpg");
+    background-image: url("/static/img/vk_colored.jpg");
     background-repeat: no-repeat;
 }
 .clients .youtube {
-    background-image: url("../img/youtube.jpg");
+    background-image: url("/static/img/youtube.jpg");
     background-repeat: no-repeat;
     transition: background-image 0.3s;
 }
 
 .clients .youtube:hover {
-    background-image: url("../img/youtube_colored.png");
+    background-image: url("/static/img/youtube_colored.png");
     background-repeat: no-repeat;
 }
 
